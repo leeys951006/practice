@@ -1,0 +1,73 @@
+  <!DOCTYPE html>
+  <html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+  </head>
+  <body>
+    <div id="root"></div>
+    <div id="nav"></div>
+    <div id="div"></div>
+
+    <script>
+
+      document.body.style.padding = 0;
+      document.body.style.margin = 0;
+
+      // root
+      const root = document.getElementById('root');
+      
+
+      // nav
+      const nav = document.getElementById('nav');
+      
+      
+     
+      // div
+      const div = document.getElementById('div');
+     
+
+      
+      // 스타일 제작
+      root.style.position = "absolute"
+      root.style.width = "100vw"
+      root.style.height = "100vh"
+      root.style.backgroundColor = "#D9D9D9"
+      
+
+      nav.style.position = "absolute"
+      nav.style.width = "35vw"
+      nav.style.height = "100vh"
+      nav.style.backgroundColor = "#B0B0B0"
+
+      div.style.position = "absolute"
+      div.style.width = "80px"
+      div.style.height = "80px"
+      div.style.backgroundColor = "#464646"
+      div.style.margin = "50px"
+
+      // // 마우스 클릭시 없어지는 기능
+      // function MouseClick() {
+      //   nav.style.display = "none"
+      // }
+
+      // div.addEventListener("click", MouseClick);
+
+      // 마우스 클릭시 없어졌다가 한번 더 클릭시 나타나는 기능
+
+      function MouseClicker() {
+        if (nav.style.display === "block") {
+          nav.style.display = "none"}
+          else {
+            nav.style.display = "block"
+          }
+        }
+      
+      
+      div.addEventListener("mouseenter", MouseClicker)
+
+    </script>
+</body>
+</html>

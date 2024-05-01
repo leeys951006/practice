@@ -1,0 +1,946 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Yeonseung Test</title>
+
+  <style>
+    body {
+      display: flex;
+      background-color: black;
+      margin: 0;
+      width: 100%;
+      height: 3000vh;
+    }
+
+    body>div:nth-child(1) {
+      display: flex;
+      background-color: black;
+      width: 15%;
+      height: 100%;
+      flex-direction: column;
+    }
+    body>div:nth-child(2) {
+      display: flex;
+      background-color: rgb(69, 67, 67);
+      width: 70%;
+      height: 100%;
+      flex-direction: column;
+    }
+    body>div:nth-child(3) {
+      display: flex;
+      background-color: black;
+      width: 15%;
+      height: 100%;
+      flex-direction: column;
+    }
+    /* 위쪽 흰색 부분 설정 */
+    body>div:nth-child(1)>div:nth-child(1) {
+      display: flex;
+      background-color: white;
+      width: 100%;
+      height: 0.2%;
+    }
+    body>div:nth-child(2)>div:nth-child(1) {
+      display: flex;
+      background-color: white;
+      width: 100%;
+      height: 0.2%;
+    }
+    body>div:nth-child(2)>div:nth-child(1)>div:nth-child(1) {
+      display: flex;
+      background-color: blue;
+      width: 45%;
+      height: 100%;
+    }
+    body>div:nth-child(2)>div:nth-child(1)>div:nth-child(2) {
+      display: flex;
+      background-color: white;
+      width: 10%;
+      height: 100%;
+    }
+    body>div:nth-child(2)>div:nth-child(1)>div:nth-child(3) {
+      display: flex;
+      background-color: blue;
+      width: 45%;
+      height: 100%;
+    }
+    body>div:nth-child(3)>div:nth-child(1) {
+      display: flex;
+      background-color: white;
+      width: 100%;
+      height: 0.2%;
+    }
+    /* 흰색 부분 밑 */
+    body>div:nth-child(1)>div:nth-child(2) {
+      display: flex;
+      background-color: rgb(24, 23, 23);
+      width: 100%;
+      height: 0.15%;
+    }
+    body>div:nth-child(2)>div:nth-child(2) {
+      display: flex;
+      background-color: red;
+      width: 100%;
+      height: 0.15%;
+    }
+    body>div:nth-child(3)>div:nth-child(2) {
+      display: flex;
+      background-color: rgb(24, 23, 23);
+      width: 100%;
+      height: 0.15%;
+    }
+    /* 보상판매 부분 */
+    body>div:nth-child(1)>div:nth-child(3) {
+      display: flex;
+      background-color: rgb(116, 109, 109);
+      width: 100%;
+      height: 0.3%;
+    }
+    body>div:nth-child(2)>div:nth-child(3) {
+      display: flex;
+      background-color: rgb(255, 255, 255);
+      width: 100%;
+      height: 0.3%;
+    }
+    body>div:nth-child(2)>div:nth-child(3)>div:nth-child(1) {
+      display: flex;
+      background-color: yellow;
+      width: 25%;
+      height: 100%;
+    }
+    body>div:nth-child(2)>div:nth-child(3)>div:nth-child(2) {
+      display: flex;
+      background-color: blue;
+      width: 50%;
+      height: 100%;
+    }
+    body>div:nth-child(2)>div:nth-child(3)>div:nth-child(3) {
+      display: flex;
+      background-color: yellow;
+      width: 25%;
+      height: 100%;
+    }
+    body>div:nth-child(3)>div:nth-child(3) {
+      display: flex;
+      background-color: rgb(116, 109, 109);
+      width: 100%;
+      height: 0.3%;
+    }
+    /* 보상판매 밑 */
+    body>div:nth-child(1)>div:nth-of-type(4) {
+      display: flex;
+      background-color: black;
+      width: 100%;
+      height: 1.1%;
+    }
+    body>div:nth-child(2)>div:nth-of-type(4) {
+      display: flex;
+      background-color: black;
+      width: 100%;
+      height: 1.1%;
+    }
+    body>div:nth-child(3)>div:nth-of-type(4) {
+      display: flex;
+      background-color: black;
+      width: 100%;
+      height: 1.1%;
+    }
+    /* 티타늄 사진부분 */
+    body>div:nth-child(1)>div:nth-child(5) {
+      display: flex;
+      background-color: black;
+      width: 100%;
+      height: 1%;
+    }
+    body>div:nth-child(2)>div:nth-child(5) {
+      display: flex;
+      background-color: aqua;
+      width: 100%;
+      height: 1%;
+      flex-direction: column;
+    }
+    /* iPhone15 부분 */
+    body>div:nth-child(2)>div:nth-child(5)>div:nth-child(1) {
+      display: flex;
+      background-color: orange;
+      width: 100%;
+      height: 16%;
+    }
+    body>div:nth-child(2)>div:nth-child(5)>div:nth-child(1)>div:nth-child(1) {
+      display: flex;
+      background-color: orange;
+      width: 42%;
+      height: 100%;
+    }
+    /* iPhoene15 글자부분 */
+    body>div:nth-child(2)>div:nth-child(5)>div:nth-child(1)>div:nth-child(2) {
+      display: flex;
+      background-color: brown;
+      width: 16%;
+      height: 100%;
+
+    }
+    body>div:nth-child(2)>div:nth-child(5)>div:nth-child(1)>div:nth-child(3) {
+      display: flex;
+      background-color: orange;
+      width: 42%;
+      height: 100%;
+    }
+
+    body>div:nth-child(2)>div:nth-child(5)>div:nth-child(2) {
+      display: flex;
+      background-color: aquamarine;
+      width: 100%;
+      height: 84%;
+    }
+    /* 티타늄 사진부분 */
+    body>div:nth-child(3)>div:nth-child(5) {
+      display: flex;
+      background-color: black;
+      width: 100%;
+      height: 1%;
+    }
+    /* 구입하기 부분 */
+    body>div:nth-child(1)>div:nth-child(6) {
+      display: flex;
+      background-color: black;
+      width: 100%;
+      height: 1.7%;
+    }
+    body>div:nth-child(2)>div:nth-child(6) {
+      display: flex;
+      background-color: black;
+      width: 100%;
+      height: 1.7%;
+    }
+    /* 구입하기 부분(가격 부분쪽 나누기) */
+    body>div:nth-child(2)>div:nth-child(6)>div:nth-child(1) {
+      display: flex;
+      background-color: rgb(24, 24, 24);
+      width: 44%;
+      height: 100%;
+    }
+    body>div:nth-child(2)>div:nth-child(6)>div:nth-child(2) {
+      display: flex;
+      background-color: white;
+      width: 12%;
+      height: 100%;
+      flex-direction: column;
+    }
+    /* 가격 부분쪽 나누기 */
+    body>div:nth-child(2)>div:nth-child(6)>div:nth-child(2)>div:nth-child(1) {
+      display: flex;
+      background-color: rgb(24, 24, 24);
+      width: 100%;
+      height: 57.6%;
+    }
+    body>div:nth-child(2)>div:nth-child(6)>div:nth-child(2)>div:nth-child(2) {
+      display: flex;
+      background-color: white;
+      width: 100%;
+      height: 6.2%;
+    }
+    /* 버튼 크기조정 */
+    button {
+      width: 162.7px;
+      height: 44.2px;
+    }
+    body>div:nth-child(2)>div:nth-child(6)>div:nth-child(2)>div:nth-child(3) {
+      display: flex;
+      background-color: rgb(24, 24, 24);
+      width: 100%;
+      height: 10.3%;
+    }
+    body>div:nth-child(2)>div:nth-child(6)>div:nth-child(2)>div:nth-child(4) {
+      display: flex;
+      background-color: white;
+      width: 100%;
+      height: 4.5%;
+    }
+    
+    body>div:nth-child(2)>div:nth-child(6)>div:nth-child(2)>div:nth-child(5) {
+      display: flex;
+      background-color: rgb(24, 24, 24);
+      width: 100%;
+      height: 21.4%;
+    }
+    body>div:nth-child(2)>div:nth-child(6)>div:nth-child(3) {
+      display: flex;
+      background-color: rgb(24, 24, 24);
+      width: 44%;
+      height: 100%;
+    }
+    body>div:nth-child(3)>div:nth-child(6) {
+      display: flex;
+      background-color: black;
+      width: 100%;
+      height: 1.7%;
+    }
+    /* page 2 */
+    body>div:nth-child(1)>div:nth-child(7) {
+      display: flex;
+      background-color: rgb(93, 93, 93);
+      width: 100%;
+      height: 1.1%;
+    }
+    body>div:nth-child(2)>div:nth-child(7) {
+      display: flex;
+      background-color: rgb(93, 93, 93);
+      width: 100%;
+      height: 1.1%;
+    }
+    /* 글자부분 나누기 */
+    body>div:nth-child(2)>div:nth-child(7)>div:nth-child(1) {
+      display: flex;
+      background-color: red;
+      width: 31.3%;
+      height: 100%;
+      flex-direction: column;
+    }
+    body>div:nth-child(2)>div:nth-child(7)>div:nth-child(2) {
+      display: flex;
+      background-color: rgb(93, 93, 93);
+      width: 37%;
+      height: 100%;
+    }
+    body>div:nth-child(2)>div:nth-child(7)>div:nth-child(3) {
+      display: flex;
+      background-color: red;
+      width: 31.7%;
+      height: 100%;
+      flex-direction: column;
+    }
+    /* 일단 핵심부터 부분 나누기 */
+    body>div:nth-child(2)>div:nth-child(7)>div:nth-child(1)>div:nth-child(1) {
+      display: flex;
+      background-color: rgb(93, 93, 93);
+      width: 100%;
+      height: 65.2%;
+    }
+    body>div:nth-child(2)>div:nth-child(7)>div:nth-child(1)>div:nth-child(2) {
+      display: flex;
+      background-color: white;
+      width: 100%;
+      height: 21.6%;
+    }
+    body>div:nth-child(2)>div:nth-child(7)>div:nth-child(1)>div:nth-child(3) {
+      display: flex;
+      background-color: rgb(93, 93, 93);
+      width: 100%;
+      height: 13.2%;
+    }
+    /* 동영상보기, 이벤트 시청하기 */
+    body>div:nth-child(2)>div:nth-child(7)>div:nth-child(3)>div:nth-child(1) {
+      display: flex;
+      background-color: rgb(93, 93, 93);
+      width: 100%;
+      height: 75.7%;
+    }
+    body>div:nth-child(2)>div:nth-child(7)>div:nth-child(3)>div:nth-child(2) {
+      display: flex;
+      background-color: white;
+      width: 100%;
+      height: 8.8%;
+    }
+    body>div:nth-child(2)>div:nth-child(7)>div:nth-child(3)>div:nth-child(3) {
+      display: flex;
+      background-color: rgb(93, 93, 93);
+      width: 100%;
+      height: 15.5%;
+    }
+    /* page 2 */
+    body>div:nth-child(3)>div:nth-child(7) {
+      display: flex;
+      background-color: rgb(93, 93, 93);
+      width: 100%;
+      height: 1.1%;
+    }
+    /* A17 Pro 등장 */
+    body>div:nth-child(1)>div:nth-child(8) {
+      display: flex;
+      background-color: rgb(93, 93, 93);
+      width: 100%;
+      height: 2.4%;
+    }
+    body>div:nth-child(2)>div:nth-child(8) {
+      display: flex;
+      background-color: black;
+      width: 100%;
+      height: 2.4%;
+    }
+    body>div:nth-child(3)>div:nth-child(8) {
+      display: flex;
+      background-color: rgb(93, 93, 93);
+      width: 100%;
+      height: 2.4%;
+    }
+   /* 티타늄,초강력,초경량 */
+   body>div:nth-child(3)>div:nth-child(8)>div:nth-child(1) {
+    display: flex;
+    background-color: rgb(93, 93, 93);
+    width: 31%;
+    height: 100%;
+   }
+   body>div:nth-child(3)>div:nth-child(8)>div:nth-child(2) {
+    display: flex;
+    background-color: black;
+    width: 69%;
+    height: 100%;
+   }
+   /* A17 Pro 등장 밑 부분 */
+   body>div:nth-child(1)>div:nth-child(9) {
+    display: flex;
+    background-color: rgb(93, 93, 93);
+    width: 100%;
+    height: 1%;
+   }
+   body>div:nth-child(2)>div:nth-child(9) {
+    display: flex;
+    background-color: rgb(93, 93, 93);
+    width: 100%;
+    height: 1%;
+   }
+   body>div:nth-child(3)>div:nth-child(9) {
+    display: flex;
+    background-color: rgb(93, 93, 93);
+    width: 100%;
+    height: 1%;
+   }
+   /* 보다 자세히 들여다보기 부분 */
+   body>div:nth-child(1)>div:nth-child(10) {
+    display: flex;
+    background-color: black;
+    width: 100%;
+    height: 1.2%;
+   }
+   body>div:nth-child(2)>div:nth-child(10) {
+    display: flex;
+    background-color: antiquewhite;
+    width: 100%;
+    height: 1.2%;
+   }
+   /* 글자부분과 아닌부분 나누기 */
+   body>div:nth-child(2)>div:nth-child(10)>div:nth-child(1) {
+    display: flex;
+    background-color: black;
+    width: 49%;
+    height: 100%;
+    flex-direction: column;
+   }
+   body>div:nth-child(2)>div:nth-child(10)>div:nth-child(2) {
+    display: flex;
+    background-color: black;
+    width: 51%;
+    height: 100%;
+   }
+   /* 보다 자세히 들여다보기 글자부분 만들기 */
+   body>div:nth-child(2)>div:nth-child(10)>div:nth-child(1)>div:nth-child(1) {
+    display: flex;
+    background-color: black;
+    width: 100%;
+    height: 58%;
+   }
+   body>div:nth-child(2)>div:nth-child(10)>div:nth-child(1)>div:nth-child(2) {
+    display: flex;
+    background-color: white;
+    width: 100%;
+    height: 19.2%;
+   }
+   body>div:nth-child(2)>div:nth-child(10)>div:nth-child(1)>div:nth-child(3) {
+    display: flex;
+    background-color: black;
+    width: 100%;
+    height: 22.8%;
+   }
+   /* 보다 자세히 들여다보기 부분 */
+   body>div:nth-child(3)>div:nth-child(10) {
+    display: flex;
+    background-color: black;
+    width: 100%;
+    height: 1.2%;
+   }
+   /* 아이폰 4개 겹친 사진 부분 */
+   body>div:nth-child(1)>div:nth-child(11) {
+    display: flex;
+    background-color: black;
+    width: 100%;
+    height: 2.3%;
+   }
+   body>div:nth-child(2)>div:nth-child(11) {
+    display: flex;
+    background-color: blanchedalmond;
+    width: 100%;
+    height: 2.3%;
+   }
+   body>div:nth-child(3)>div:nth-child(11) {
+    display: flex;
+    background-color: black;
+    width: 100%;
+    height: 2.3%;
+   }
+   /* 아이폰 4개 겹친 사진 부분 밑 여백 */
+   body>div:nth-child(1)>div:nth-child(12) {
+    display: flex;
+    background-color: black;
+    width: 100%;
+    height: 0.4%;
+   }
+   body>div:nth-child(2)>div:nth-child(12) {
+    display: flex;
+    background-color: black;
+    width: 100%;
+    height: 0.4%;
+   }
+   body>div:nth-child(3)>div:nth-child(12) {
+    display: flex;
+    background-color: black;
+    width: 100%;
+    height: 0.4%;
+   }
+   /* 본격적으로 탐구해보기 부분 */
+   body>div:nth-child(1)>div:nth-child(13) {
+    display: flex;
+    background-color: rgb(90, 90, 90);
+    width: 100%;
+    height: 2.7%;
+   }
+   body>div:nth-child(2)>div:nth-child(13) {
+    display: flex;
+    background-color: rgb(172, 104, 104);
+    width: 100%;
+    height: 2.7%;
+    flex-direction: column;
+   }
+   body>div:nth-child(2)>div:nth-child(13)>div:nth-child(1) {
+    display: flex;
+    background-color: rgb(90, 90, 90);
+    width: 100%;
+    height: 26.6%;
+   }
+   body>div:nth-child(2)>div:nth-child(13)>div:nth-child(2) {
+    display: flex;
+    background-color: azure;
+    width: 100%;
+    height: 8.8%;
+   }
+   body>div:nth-child(2)>div:nth-child(13)>div:nth-child(3) {
+    display: flex;
+    background-color: rgb(90, 90, 90);
+    width: 100%;
+    height: 26.6%;
+   }
+   body>div:nth-child(2)>div:nth-child(13)>div:nth-child(4) {
+    display: flex;
+    background-color: azure;
+    width: 100%;
+    height: 24.5%;
+   }
+   body>div:nth-child(2)>div:nth-child(13)>div:nth-child(5) {
+    display: flex;
+    background-color: rgb(90, 90, 90);
+    width: 100%;
+    height: 13.5%;
+   }
+   /* 본격적으로 탐구해보기 부분 */
+   body>div:nth-child(3)>div:nth-child(13) {
+    display: flex;
+    background-color: rgb(90, 90, 90);
+    width: 100%;
+    height: 2.7%;
+   }
+   /* 본격적으로 탐구해보기 글자 나누기 */
+   body>div:nth-child(2)>div:nth-child(13)>div:nth-child(2)>div:nth-child(1) {
+    display: flex;
+    background-color: white;
+    width: 33.3%;
+    height: 100%;
+   }
+   body>div:nth-child(2)>div:nth-child(13)>div:nth-child(2)>div:nth-child(2) {
+    display: flex;
+    background-color: rgb(90, 90, 90);
+    width: 66.7%;
+    height: 100%;
+   }
+   /* iPhone15 티타늄을 두르다 부분 */
+   body>div:nth-child(2)>div:nth-child(13)>div:nth-child(4)>div:nth-child(1) {
+    display: flex;
+    background-color: white;
+    width: 25.1%;
+    height: 100%;
+   }
+   body>div:nth-child(2)>div:nth-child(13)>div:nth-child(4)>div:nth-child(2) {
+    display: flex;
+    background-color: rgb(90, 90, 90);
+    width: 74.9%;
+    height: 100%;
+   }
+   /* 아이폰 상세사진 부분 */
+   body>div:nth-child(1)>div:nth-child(14) {
+    display: flex;
+    background-color: rgb(90, 90, 90);
+    width: 100%;
+    height: 3.7%;
+   }
+   body>div:nth-child(2)>div:nth-child(14) {
+    display: flex;
+    background-color: gray;
+    width: 100%;
+    height: 3.7%;
+   }
+   body>div:nth-child(3)>div:nth-child(14) {
+    display: flex;
+    background-color: rgb(90, 90, 90);
+    width: 100%;
+    height: 3.7%;
+   }
+   /* 아이폰 상세사진 부분 밑 */
+   body>div:nth-child(1)>div:nth-child(15) {
+    display: flex;
+    background-color: rgb(90, 90, 90);
+    width: 100%;
+    height: 1.7%;
+   }
+   body>div:nth-child(2)>div:nth-child(15) {
+    display: flex;
+    background-color: black;
+    width: 100%;
+    height: 1.7%;
+    flex-direction: column;
+   }
+   body>div:nth-child(2)>div:nth-child(15)>div:nth-child(1) {
+    display: flex;
+    background-color: rgb(90, 90, 90);
+    width: 100%;
+    height: 12.1%;
+   }
+   body>div:nth-child(2)>div:nth-child(15)>div:nth-child(2) {
+    display: flex;
+    background-color: white;
+    width: 100%;
+    height: 32.7%;
+   }
+   body>div:nth-child(2)>div:nth-child(15)>div:nth-child(2)>div:nth-child(1) {
+    display: flex;
+    background-color: blue;
+    width: 50%;
+    height: 100%;
+   }
+   body>div:nth-child(2)>div:nth-child(15)>div:nth-child(2)>div:nth-child(2) {
+    display: flex;
+    background-color: red;
+    width: 50%;
+    height: 100%;
+   }
+
+   body>div:nth-child(2)>div:nth-child(15)>div:nth-child(3) {
+    display: flex;
+    background-color: rgb(90, 90, 90);
+    width: 100%;
+    height: 55.2%;
+   }
+   body>div:nth-child(3)>div:nth-child(15) {
+    display: flex;
+    background-color: rgb(90, 90, 90);
+    width: 100%;
+    height: 1.7%;
+   }
+
+  </style>
+</head>
+<body>
+ 
+  <div> <!-- ?첫번째 여백 -->
+    
+    <div><!-- 위쪽 흰색 부분 -->
+
+    </div>
+    
+    <div><!-- 흰색 부분 밑 -->
+
+    </div>
+    
+    <div><!-- 보상판매 부분 -->
+
+    </div>
+    
+    <div><!-- 보상판매 밑 -->
+
+    </div>
+
+    <div><!-- 티타늄 사진부분 -->
+
+    </div>
+    
+    <div><!-- 구입하기 부분 -->
+
+    </div>
+    
+    <div><!-- page 2 -->
+    </div>
+    <div><!-- A17 Pro -->
+    </div>
+    <div><!-- A17 Pro 부분 밑 -->
+    </div>
+    <div><!-- 보다 자세히 들여다보기 부분 -->   
+    </div>
+    <div><!-- 아이폰 4개 겹친 사진 -->
+    </div>
+    <div><!-- 아이폰 4개 겹친 사진 밑 여백 -->
+    </div>
+    <div><!-- 본격적으로 탐구해보기 부분 -->
+    </div>
+    <div><!-- 아이폰 상세 사진 부분 -->
+    </div>
+    <div><!-- 아이폰 상세 사진 부분 밑 -->
+    </div>
+
+  </div>
+  
+  <div><!-- ?두번째 여백 -->
+    
+    <div><!-- 위쪽 흰색 부분 -->
+      <div>
+
+      </div>
+      <div>
+
+      </div>
+      <div>
+
+      </div>
+
+    </div>
+    
+    <div><!-- 흰색 부분 밑 -->
+     
+    </div>
+    <div><!-- 보상판매 부분 -->
+
+      <div>
+
+      </div>
+      <div>
+
+      </div>
+      <div>
+
+      </div>
+
+    </div>
+
+    <div><!-- 보상판매 밑 -->
+
+    </div>
+
+    <div><!-- 티타늄 사진부분 -->
+      <div><!-- iPhon 15 -->
+        <div>
+
+        </div>
+        <div>
+         
+        </div>
+        <div>
+
+        </div>
+
+      </div>
+      <div>
+
+      </div>
+
+    </div>
+    
+    <div><!-- 구입하기 부분 -->
+      <!-- 구입하기 부분(가격부분) -->
+      <div>
+
+      </div>
+      <!-- 구입하기 부분(가격부분) 두번째 박스 나누기 -->
+      <div>
+        <div>
+
+        </div>
+        <div><!-- 버튼 만들어보기 -->
+          <button type="button" onclick="alert('주문이완료되었습니다')">구입하기</button>
+        
+        </div>
+        <div>
+
+        </div>
+        <div>
+
+        </div>
+        <div>
+
+        </div>
+
+
+      </div>
+      <div>
+
+      </div>
+
+    </div>
+    <div><!-- page 2 -->
+      <div><!-- 일단 핵심부터 부분 --> 
+        <div>
+        </div>
+        <div>
+        </div>
+        <div>
+        </div>
+
+      </div>
+      <div>
+
+      </div>
+      <div><!-- 동영상 보기,이벤트 시청하기 -->
+        <div>
+
+        </div>
+        <div>
+
+        </div>
+        <div>
+
+        </div>
+
+      </div>
+    </div>
+    <div><!-- A17 Pro -->
+    </div>
+    <div><!-- A17 Pro 부분 밑 -->
+    </div>
+    <div><!-- 보다 자세히 들여다보기 부분 -->   
+      <div><!-- 글자부분과 아닌부분 나누기 -->
+        <div><!-- 보다 자세히 들여다보기 글자넣기 -->
+
+        </div>
+        <div>
+
+        </div>
+        <div>
+
+        </div>
+
+      </div>
+      <div>
+
+      </div>
+    </div>
+    <div><!-- 아이폰 4개 겹친 사진 -->
+    </div>
+    <div><!-- 아이폰 4개 겹친 사진 밑 여백 -->
+    </div>
+    <div><!-- 본격적으로 탐구해보기 부분 -->
+      <div>
+
+      </div>
+      <div><!-- 본격적으로 탐구해보기 글자 나누기 -->
+        <div>
+
+        </div>
+        <div>
+
+        </div>
+
+      </div>
+      <div>
+
+      </div>
+
+      <div><!-- iPhone15 티타늄을 두르다 -->
+        <div>
+
+        </div>
+        <div>
+
+        </div>
+
+      </div>
+      <div>
+
+      </div>
+    </div>
+    <div><!-- 아이폰 상세 사진 부분 -->
+    </div>
+    <div><!-- 아이폰 상세 사진 부분 밑 -->
+      <div>
+
+      </div>
+      <div>
+        <div>
+
+        </div>
+        <div>
+
+        </div>
+
+      </div>
+      <div>
+
+      </div>
+     
+     
+    </div>
+
+  </div>
+  
+  <div><!-- ?세번째 여백 -->
+    
+    <div><!-- 위쪽 흰색 부분 -->
+
+    </div>
+    
+    <div><!-- 흰색 부분 밑 -->
+
+    </div>
+    <div><!-- 보상판매 부분 -->
+
+    </div>
+
+    <div><!-- 보상판매 밑 -->
+
+    </div>
+
+    <div><!-- 티타늄 사진부분 -->
+
+    </div>
+    
+    <div><!-- 구입하기 부분 -->
+  
+    </div>
+    <div><!-- page 2 -->
+    </div>
+    <div><!-- A17 Pro -->
+      <div><!-- A17 Pro -->
+
+      </div>
+      <div>
+
+      </div>
+    </div>
+    <div><!-- A17 Pro 부분 밑 -->
+    </div>
+    <div><!-- 보다 자세히 들여다보기 부분 -->   
+    </div>
+    <div><!-- 아이폰 4개 겹친 사진 -->
+    </div>
+    <div><!-- 아이폰 4개 겹친 사진 밑 여백 -->
+    </div>
+    <div><!-- 본격적으로 탐구해보기 부분 -->
+    </div>
+    <div><!-- 아이폰 상세 사진 부분 -->
+    </div>
+    <div><!-- 아이폰 상세 사진 부분 밑 -->
+    </div>
+
+  </div>
+
+
+  
+</body>
+</html>

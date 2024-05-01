@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <div id="root">
+    <h1 onclick="trueChange()">이연승</h1>
+  </div>
+  <script>
+    
+
+    function trueChange() {
+      let root = document.getElementById('root');
+    console.log(root.children[0]);
+
+    root.children[0].innerHTML = "호연승";
+    root.style.color = "blue"
+    root.style.fontSize = "10vw"
+    root.style.fontSize = "10vh"
+    }
+
+  </script>
+</body>
+</html>
