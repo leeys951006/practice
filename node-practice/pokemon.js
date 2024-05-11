@@ -84,9 +84,3 @@ function pokemonSelector(array) {
   }
   return array[firstGetRandomIndex];
 }
-
-
-// 포켓몬 이미지에 포켓몬 리스트 넣기 
-const getData = pokemonSelector(pokemonlist);
-let PText = document.createTextNode(getData);
-pokemonimage.appendChild(PText)
