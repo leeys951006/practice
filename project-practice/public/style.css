@@ -1,0 +1,10 @@
+body>:nth-child(1) {
+  color : red;
+}
+
+body>:nth-child(2)>:nth-child(1) {
+  color : yellow;
+}
+body>:nth-child(2)>:nth-child(2) {
+  color : blue;
+}
