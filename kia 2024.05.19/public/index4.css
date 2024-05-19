@@ -1,0 +1,36 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 1707px;
+  height: 897px;
+
+}
+body>div {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  height: 5%;
+}
+
+
+
+#one {
+  width: 100%;
+  height: 60%;
+}
+
+#selec {
+  width: 100%;
+  height: 15%;
+}
+
+#blank {
+  width: 100%;
+  height: 20%;
+}

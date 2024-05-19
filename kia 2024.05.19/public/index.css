@@ -1,0 +1,144 @@
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  width: 1707px;
+  height: 897px;
+  font-family: "Noto Sans KR", sans-serif;
+}
+
+body>div:nth-child(1) {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+  background-image: url(https://www.kia.com/content/dam/kwp/kr/ko/main-kv-contents/202405/kv_ev6_pe_bg_pc.jpg);
+}
+/* 상단 */
+body>div>div:nth-child(1) {
+  display: flex;
+  justify-content: space-between;
+  align-content: end;
+  width: 100%;
+  height: 10%;
+  margin-top: 3%;
+}
+/* 차량 */
+body>div>div:nth-child(1)>div:nth-child(1) {
+  
+  width: 10%;
+  font-size: 13px;
+  color: white;
+  text-decoration-line: none;
+  margin-left: 5%;
+}
+/* 구매 */
+body>div>div:nth-child(1)>div:nth-child(2) {
+  
+  width: 10%;
+  font-size: 13px;
+  color: white;
+  
+}
+/* 체험 */
+body>div>div:nth-child(1)>div:nth-child(3) {
+  
+  width: 10%;
+  font-size: 13px;
+  color: white;
+  
+}
+/* 이벤트 */
+body>div>div:nth-child(1)>div:nth-child(4) {
+  
+  width: 10%;
+  font-size: 13px;
+  color: white;
+}
+/* 메인 */
+body>div>div:nth-child(1)>div:nth-child(5) {
+  
+  width: 40%;
+  width: 150px;
+  height: 30px;
+  margin-left: 100px;
+}
+
+body>div>div:nth-child(1)>div:nth-child(6) {
+  
+  width: 10%;
+  margin-right: 18%;
+  
+}
+/* 통합검색 */
+body>div>div:nth-child(1)>div:nth-child(7) {
+  
+  width: 10%;
+  font-size: 20px;
+  color: white;
+}
+/* 로그인 */
+body>div>div:nth-child(1)>div:nth-child(8) {
+  
+  width: 10%;
+  font-size: 20px;
+  color: white;
+  margin-right: 5%;
+}
+
+/* 하단 */
+body>div>div:nth-child(2) {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 90%;
+}
+
+/* 하단 빈공간 */
+body>div>div:nth-child(2)>div:nth-child(1) {
+  width: 100%;
+  height: 60%;
+}
+/* The Energetic */
+body>div>div:nth-child(2)>div:nth-child(2) {
+  width: 100%;
+  height: 5%;
+  color: white;
+  margin-left: 3%;
+}
+/* The new EV6 */
+body>div>div:nth-child(2)>div:nth-child(3) {
+  width: 100%;
+  height: 10%;
+  color: white;
+  font-size: 60px;
+  margin-left: 3%;
+}
+/* 자세히 보기, 견적 내기 */
+body>div>div:nth-child(2)>div:nth-child(4) {
+  display: flex;
+  text-align: center;
+  width: 100%;
+  height: 10%;
+  margin-bottom: 5%;
+  margin-top: 5%;
+  margin-left: 3%;
+}
+
+body>div>div:nth-child(2)>div:nth-child(4)>div:nth-child(1) {
+  width: 8%;
+  height: 50%;
+  background-color: white;
+  padding-top: 0.8%;
+}
+body>div>div:nth-child(2)>div:nth-child(4)>div:nth-child(2) {
+  width: 8%;
+  height: 50%;
+  background-color: black;
+  color: white;
+  margin-left: 1%;
+  padding-top: 0.8%;
+}
