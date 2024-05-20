@@ -157,4 +157,11 @@ const server = http.createServer(function(req,res){
   }
 });
 
-server.listen(8080);
+server.listen(8080,(err) => {
+  if(err) {
+    console.log("Error");
+  } else {
+    console.log("서버돌아감");
+    console.log("http:localhost:8080");
+  }
+});
