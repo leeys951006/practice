@@ -1,0 +1,24 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+#root {
+  background-color: aqua;
+  width: 500px;
+  height: 700px;
+}
+
+#main {
+  position: absolute;
+  width: 200px;
+  height: 300px;
+  background-color: blue;
+}
+
+#button {
+  background-color: red;
+  width: 200px;
+  height: 50px;
+  margin-left: 300px;
+}
