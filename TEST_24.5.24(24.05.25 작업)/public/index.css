@@ -1,0 +1,82 @@
+* {
+  margin :0;
+  padding :0;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 1920px;
+  height: 1080px;
+}
+
+/* logo */
+body>a {
+  width: 15vw;
+  height: 10vw;
+}
+
+body>a>img {
+  width: 100%;
+  height: 100%;
+}
+
+/* category */
+
+body>div:nth-child(2) {
+  display: flex;
+  width: 100vw;
+  height: 70vw;
+}
+
+body>div:nth-child(2)>div:nth-child(1) {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  height: 100%;
+}
+
+body>div:nth-child(2)>div:nth-child(2) {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  height: 100%;
+}
+
+#work {
+  background-color: black; 
+  margin-top: 15%;
+  margin-bottom: 10%;
+  margin-left: 40%;
+  width: 50%;
+  height: 30%;
+}
+
+#home {
+  background-color: red; 
+  margin-top: 10%;
+  margin-bottom: 15%;
+  margin-left: 40%;
+  width: 50%;
+  height: 30%;
+}
+
+#study {
+  background-color: black; 
+  margin-top: 15%;
+  margin-bottom: 10%;
+  margin-right: 40%;
+  width: 50%;
+  height: 30%;
+}
+
+#couple {
+  background-color: red; 
+  margin-top: 10%;
+  margin-bottom: 15%;
+  margin-right: 40%;
+  width: 50%;
+  height: 30%;
+}
